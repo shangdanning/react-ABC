@@ -1,0 +1,17 @@
+//2020-3-30
+function Animal(name){
+    this.name=name;
+}
+Animal.prototype.speak=function(){
+    console.log(this.name+' makes a noise');
+}
+
+class Dog extends Animal{
+    speak(){
+        super.speak();
+        console.log(this.name+ ' barks');
+    }
+} 
+var d=new Dog('nike');
+d.speak();
+
